@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="surface">#FF070B1A</color>
+    <color name="ink">#FFF4F7FF</color>
+    <color name="muted">#FFAEB8D2</color>
+    <color name="brand">#FF84D5FF</color>
+    <color name="brand_light">#FFC3ECFF</color>
+    <color name="accent">#FFB184FF</color>
+    <color name="panel">#D9162342</color>
+    <color name="panel_strong">#F0182748</color>
+    <color name="card_stroke">#6665BCEB</color>
+    <color name="divider">#335D85B6</color>
+    <color name="nebula">#FF17275D</color>
+    <color name="glow">#4D8BDFFF</color>
+</resources>

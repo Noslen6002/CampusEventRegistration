@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_space">
+
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/topAppBar" android:layout_width="0dp" android:layout_height="wrap_content" android:background="@android:color/transparent" android:paddingStart="8dp" android:paddingEnd="8dp" app:title="ASTRA CAMPUS" app:titleTextColor="@color/ink" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView android:id="@+id/contentScroll" android:layout_width="0dp" android:layout_height="0dp" android:clipToPadding="false" android:fillViewport="true" android:paddingStart="20dp" android:paddingTop="8dp" android:paddingEnd="20dp" android:paddingBottom="96dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topAppBar">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:text="CAMPUS REGISTRATION // 01" android:textColor="@color/brand" android:textSize="11sp" android:letterSpacing="0.16" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:fontFamily="sans-serif" android:text="Students meet\nthe moment." android:textColor="@color/ink" android:textSize="31sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Manage every student registered for your campus events." android:textColor="@color/muted" android:textSize="15sp" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="24dp" app:cardElevation="0dp" app:strokeColor="@color/card_stroke" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_command_panel" android:orientation="horizontal" android:padding="20dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STUDENT MANIFEST" android:textColor="@color/brand_light" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.12" />
+                        <TextView android:id="@+id/registrationCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="0 students" android:textColor="@color/white" android:textSize="24sp" android:textStyle="bold" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_count" android:gravity="center" android:minWidth="48dp" android:minHeight="48dp" android:text="✦" android:textColor="@color/brand" android:textSize="24sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Registered students" android:textColor="@color/ink" android:textSize="20sp" android:textStyle="bold" />
+                <TextView android:id="@+id/eventCountBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_badge" android:paddingStart="10dp" android:paddingTop="5dp" android:paddingEnd="10dp" android:paddingBottom="5dp" android:text="0 events" android:textColor="@color/brand" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+            <TextView android:id="@+id/emptyState" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:background="@drawable/bg_empty" android:gravity="center" android:padding="28dp" android:text="No students registered yet.&#10;Tap + to add a campus-event registration." android:textAlignment="center" android:textColor="@color/muted" android:textSize="15sp" />
+            <LinearLayout android:id="@+id/eventsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@+id/addButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp" android:layout_marginBottom="20dp" android:text="Add student" android:textColor="@color/white" app:backgroundTint="@color/accent" app:icon="@drawable/ic_add" app:iconTint="@color/white" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
